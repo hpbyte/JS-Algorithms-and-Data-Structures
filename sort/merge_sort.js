@@ -1,5 +1,6 @@
 /**
- * @param   {Array} arr unsorted
+ * @param   {Array} arr left
+ * @param   {Array} arr right
  * @returns {Array}     sorted
  */
 const merge = (left, right) => {
@@ -18,6 +19,10 @@ const merge = (left, right) => {
     return partial_sorted.concat((i < left.length ? left.slice(i) : right.slice(j)));
 };
 
+/**
+ * @param   {Array} arr unsorted
+ * @returns {Array}     sorted
+ */
 const MergeSort = (arr) => {
     let sorted;
     
