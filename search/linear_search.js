@@ -4,13 +4,13 @@
  * @returns {Number}    index of element if found
  */
 
- const LinearSearch = (arr, ele) => {
+const LinearSearch = (arr, target) => {
     for (let i = 0; i < arr.length; i++) {
-        if (ele === arr[i]) {
+        if (target === arr[i]) {
             return i;
         }
     }
     return -1;
- };
+};
 
- module.exports = LinearSearch;
+module.exports = LinearSearch;
