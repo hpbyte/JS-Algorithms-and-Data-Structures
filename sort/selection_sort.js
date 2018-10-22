@@ -2,7 +2,7 @@
  * @param   {Array} Array   unsorted
  * @returns {Array}         sorted
  */
-const SelectionSort = (arr) => {
+const selectionSort = (arr) => {
     for (let i = 0; i < arr.length; i++) {
         let smallest = i;
         // find smallest
@@ -20,4 +20,4 @@ const SelectionSort = (arr) => {
     return arr;
 }
 
-module.exports = SelectionSort;
+module.exports = selectionSort;

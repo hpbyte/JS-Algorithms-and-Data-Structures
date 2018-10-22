@@ -3,7 +3,7 @@
  * @param   {Number}    element to be searched
  * @returns {Number}    index of element if found
  */
-const BinarySearch = (sorted, target) => {
+const binarySearch = (sorted, target) => {
     let start = 0, end = sorted.length - 1;
 
     while (start <= end) {
@@ -23,4 +23,4 @@ const BinarySearch = (sorted, target) => {
     return -1;
 }
 
-module.exports = BinarySearch;
+module.exports = binarySearch;

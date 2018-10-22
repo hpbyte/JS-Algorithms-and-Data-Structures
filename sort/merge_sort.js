@@ -23,7 +23,7 @@ const merge = (left, right) => {
  * @param   {Array} arr unsorted
  * @returns {Array}     sorted
  */
-const MergeSort = (arr) => {
+const mergeSort = (arr) => {
     let sorted;
     
     if (arr.length === 1) {
@@ -31,8 +31,8 @@ const MergeSort = (arr) => {
     }
     else {
         let mid = arr.length >> 1;
-        let left = MergeSort(arr.slice(0, mid));
-        let right = MergeSort(arr.slice(mid));
+        let left = mergeSort(arr.slice(0, mid));
+        let right = mergeSort(arr.slice(mid));
 
         sorted = merge(left, right);
     }
@@ -40,4 +40,4 @@ const MergeSort = (arr) => {
     return sorted;
 };
 
-module.exports = MergeSort;
+module.exports = mergeSort;

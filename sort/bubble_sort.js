@@ -2,7 +2,7 @@
  * @param   {Array} arr Unsorted array 
  * @return  {Array}     Sorted array
  */
-const BubbleSort = (arr) => {
+const bubbleSort = (arr) => {
     let didSwap;
     let len = arr.length;
     
@@ -26,4 +26,4 @@ const BubbleSort = (arr) => {
     return arr;
 }
 
-module.exports = BubbleSort;
+module.exports = bubbleSort;
